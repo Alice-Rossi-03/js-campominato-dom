@@ -1,0 +1,94 @@
+/* reset del css */
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    background-color: rgba(64, 88, 16, 0.528);
+    height: 86vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    height: 7vh;
+}
+
+header .container{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+    
+
+header .container figure img{
+    height: 2.5em;
+    width: 2.5em;
+}
+
+
+footer{
+    padding: 1em;
+    height: 7vh;
+}
+
+/* reset del button */
+button{
+    border: none;
+    border-radius: 0.5em;
+    background-color: rgba(18, 47, 163, 0.774);
+    padding-block: 0.3em;
+    padding-inline: 1.5em;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+button:hover{
+    background-color: rgba(18, 47, 163, 0.536);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-block: 2em;
+}
+
+.d-none{
+    display: none; 
+}
+
+#grid{
+    display: flex;
+    width: 65%;
+    /* aspect-ratio: 1; */
+    flex-wrap: wrap;
+    /* border: 1px dashed black; */
+}
+
+.box{
+    width: calc(100% / 10);
+    aspect-ratio: 1;
+    border: 1px dashed rgb(62, 87, 69);
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.clicked-cell{
+    background-color: rgba(18, 47, 163, 0.536);
+}
+
