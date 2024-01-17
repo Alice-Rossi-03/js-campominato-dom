@@ -58,7 +58,7 @@ button:hover{
     background-color: rgba(18, 47, 163, 0.536);
 }
 
-main{
+.grid-container{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -71,7 +71,7 @@ main{
 
 #grid{
     display: flex;
-    width: 65%;
+    width: 40%;
     /* aspect-ratio: 1; */
     flex-wrap: wrap;
     /* border: 1px dashed black; */
@@ -92,3 +92,49 @@ main{
     background-color: rgba(18, 47, 163, 0.536);
 }
 
+.bomb-cell{
+    background-color: rgb(114, 58, 58); 
+    /* color: white; */
+}
+
+#playerLoses{
+    font-size: 4em;
+    color: rgb(121, 8, 8);
+    font-weight: bold;
+}
+
+#playerWins{
+    font-size: 4em;
+    font-weight: bold;
+    color: rgb(28, 129, 20);
+}
+
+.result-container{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+    z-index: 999 ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.result{
+    /* background-color:rgba(0, 0, 0, 0.457); */
+    opacity: 60%;
+    pointer-events: none;
+    cursor: none;
+    position: relative;
+}
+
+.score{
+    border-radius: 1em;
+    border: 1px solid black;
+    background-color: white;
+    padding: 0.5em;
+}
