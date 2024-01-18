@@ -88,13 +88,21 @@ button:hover{
     cursor: pointer;
 }
 
+.box:hover{
+    background-color: rgba(0, 0, 0, 0.221);
+}
+
 .clicked-cell{
     background-color: rgba(18, 47, 163, 0.536);
+    pointer-events: none;
+    cursor: none;
 }
 
 .bomb-cell{
     background-color: rgb(114, 58, 58); 
     /* color: white; */
+    pointer-events: none;
+    cursor: none;
 }
 
 #playerLoses{
